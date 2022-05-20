@@ -1,4 +1,6 @@
-
+.header{
+  width: 100%;
+}
 .App {
   text-align: center;
 }
@@ -73,7 +75,7 @@ button{
   display: flex;
   align-items: center;
   margin:auto;
-  padding-left: 38%;
+  padding-left: 10%;
  
 }
 
