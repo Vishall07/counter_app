@@ -1,23 +1,53 @@
-import logo from './logo.svg';
+
 import './App.css';
+import React,{useState} from 'react';
 
 function App() {
+  
+  let [countNum, setCount] = useState(0);
+  const increasefun = () => {
+    setCount(countNum+1)
+    console.log("you pressed button")
+    console.log(countNum)
+    
+  }
+  const resetfun = () => {
+    setCount(0)
+    console.log("you pressed button")
+    console.log(countNum)
+    
+  }
+  const decreasefun = () => {
+    setCount(countNum-1)
+    console.log("you pressed button")
+    console.log(countNum)
+    
+  }
+
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <nav>
+        <ul>
+          <li ><a href="default.asp">COUNTER APP</a></li>
+          
+        </ul>
+        </nav>
       </header>
+      <main class="content-class">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+        <h1>
+          COUNT IS: {countNum}
+        </h1>
+
+
+        <div class="btn-class">
+        <p><button onClick={decreasefun} class="w3-button w3-red"><bold>-</bold></button></p>
+        <p><button onClick={resetfun} class="w3-button w3-pale-yellow"><bold>RESET</bold></button></p>  
+        <p><button onClick={increasefun} class="w3-button w3-green"><bold>+</bold></button></p>
+        </div> 
+      </main>
     </div>
   );
 }
