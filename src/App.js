@@ -30,7 +30,7 @@ function App() {
       <header>
         <nav>
         <ul>
-          <li ><a href="default.asp">COUNTER APP</a></li>
+          <li ><a href="#">COUNTER APP</a></li>
           
         </ul>
         </nav>
@@ -42,7 +42,7 @@ function App() {
         </h1>
 
 
-        <div class="btn-class">
+        <div class="btn-class" >
         <p><button onClick={decreasefun} class="w3-button w3-red"><bold>-</bold></button></p>
         <p><button onClick={resetfun} class="w3-button w3-pale-yellow"><bold>RESET</bold></button></p>  
         <p><button onClick={increasefun} class="w3-button w3-green"><bold>+</bold></button></p>

@@ -73,9 +73,10 @@ button{
 
 .btn-class{
   display: flex;
-  align-items: center;
+  align-self: center;
+  justify-content: center;
   margin:auto;
-  padding-left: 10%;
+  
  
 }
 
